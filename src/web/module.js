@@ -1,7 +1,7 @@
 import LayerI from "./layerI.js"
-import layerMy from "./layerMy.js"
-import layerMe from "./layerMe.js"
-import layerMyself from "./layerMyself.js"
+import LayerMy from "./layerMy.js"
+import LayerMe from "./layerMe.js"
+import LayerMyself from "./layerMyself.js"
 
 // const btn = document.getElementById("click")
 // console.log(btn)
@@ -43,21 +43,21 @@ function root2(){
           </div>
           
       {/* // memo this is div:nth-child(2)  */}
-        <LayerI name="limsohee" />
+        <LayerI id="layer1" />
         
         
         
       {/* // memo this is div:nth-child(3)  */}
-        {layerMy()}
+      <LayerMy/>
 
         
         
       {/* // memo this is div:nth-child(4)  */}
-        {layerMe()}
+      <LayerMe/>
 
 
       {/* // memo this is div:nth-child(5)  */}
-        {layerMyself()}
+      <LayerMyself/>
       </div>
       )   
   }

@@ -1,8 +1,7 @@
 export default function LayerI(props){
   return (
-    <div>
+    <div id={props.id}>
       this is layer I
-      I am {props.name}
     </div>
 )
 }
