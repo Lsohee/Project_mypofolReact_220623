@@ -19,7 +19,7 @@ export default function layerMe(){
 // memo component 개념 --> 내가 직접 생성자 함수를 만든것?
 function AirBubbles(props){
   return(
-    <div class="bubbles">{props.bubbleName}</div>
+    <div className="bubbles">{props.bubbleName}</div>
   )
 }
 
