@@ -5,3 +5,5 @@ export default function layerMe(){
     </div>
   )
 }
+
+// memo 배열임

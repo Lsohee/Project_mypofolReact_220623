@@ -4,9 +4,9 @@ import {root1, root2} from "./web/module.js"
 function App() {
   return (
     <>
-    <button id="click">
+    {/* <button id="click">
       click
-    </button>
+    </button> */}
     {root1()}
     {root2()}
     </>

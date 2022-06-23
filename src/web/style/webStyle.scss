@@ -14,29 +14,41 @@
     }
   }
 
+  @mixin sizeColor ($color,$z-index){
+    width:100vw;
+    height:100vh;
+    background-color: #0810204f;
+    color:$color;
+    font-size: 16px;
+    z-index: $z-index;
+    position: absolute;
+    left:0;
+    top: 80vh;
+  }
+  
 
   #root2{
     width: 100vw;
     height: 100vh;
-    background-color: #081020;
+    background-color: #0d51da41;
     &>div:nth-child(1){
-      color:wheat;
-      font-size: 20px;
+      @include sizeColor(white,6);
+      &>div{
+        position: relative;
+        top:100px;
+        left:100px;
+      }
     }
     &>div:nth-child(2){
-      color:red;
-      font-size: 20px;
+      @include sizeColor(red,5);
     }
     &>div:nth-child(3){
-      color:orange;
-      font-size: 20px;
+      @include sizeColor(orange,4);
     }
     &>div:nth-child(4){
-      color:yellow;
-      font-size: 20px;
+      @include sizeColor(yellow,3);
     }
     &>div:nth-child(5){
-      color:green;
-      font-size: 20px;
+      @include sizeColor(green,2);
     }
   } 

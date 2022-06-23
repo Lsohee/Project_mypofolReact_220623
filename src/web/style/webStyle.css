@@ -17,25 +17,65 @@
 #root2 {
   width: 100vw;
   height: 100vh;
-  background-color: #081020;
+  background-color: rgba(13, 81, 218, 0.2549019608);
 }
 #root2 > div:nth-child(1) {
-  color: wheat;
-  font-size: 20px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(8, 16, 32, 0.3098039216);
+  color: white;
+  font-size: 16px;
+  z-index: 6;
+  position: absolute;
+  left: 0;
+  top: 80vh;
+}
+#root2 > div:nth-child(1) > div {
+  position: relative;
+  top: 100px;
+  left: 100px;
 }
 #root2 > div:nth-child(2) {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(8, 16, 32, 0.3098039216);
   color: red;
-  font-size: 20px;
+  font-size: 16px;
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  top: 80vh;
 }
 #root2 > div:nth-child(3) {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(8, 16, 32, 0.3098039216);
   color: orange;
-  font-size: 20px;
+  font-size: 16px;
+  z-index: 4;
+  position: absolute;
+  left: 0;
+  top: 80vh;
 }
 #root2 > div:nth-child(4) {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(8, 16, 32, 0.3098039216);
   color: yellow;
-  font-size: 20px;
+  font-size: 16px;
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  top: 80vh;
 }
 #root2 > div:nth-child(5) {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(8, 16, 32, 0.3098039216);
   color: green;
-  font-size: 20px;
+  font-size: 16px;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 80vh;
 }/*# sourceMappingURL=webStyle.css.map */
