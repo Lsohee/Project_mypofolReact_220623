@@ -1,0 +1,42 @@
+  #root1{
+    width:100vw;
+    height: 80vh;
+    background-color: #282c34;
+    color:aliceblue;
+    &>div:nth-child(1){
+      color:aliceblue;
+    }
+    &>div:nth-child(2){
+      color:bisque;
+    }
+    &>div:nth-child(3){
+      color:red;
+    }
+  }
+
+
+  #root2{
+    width: 100vw;
+    height: 100vh;
+    background-color: #081020;
+    &>div:nth-child(1){
+      color:wheat;
+      font-size: 20px;
+    }
+    &>div:nth-child(2){
+      color:red;
+      font-size: 20px;
+    }
+    &>div:nth-child(3){
+      color:orange;
+      font-size: 20px;
+    }
+    &>div:nth-child(4){
+      color:yellow;
+      font-size: 20px;
+    }
+    &>div:nth-child(5){
+      color:green;
+      font-size: 20px;
+    }
+  } 
