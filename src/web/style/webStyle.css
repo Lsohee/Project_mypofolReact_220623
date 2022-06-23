@@ -14,6 +14,16 @@
   color: red;
 }
 
+.bubbles {
+  border-radius: 50%;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 4em;
+  left: 45em;
+}
+
 #root2 {
   width: 100vw;
   height: 100vh;
@@ -22,7 +32,7 @@
 #root2 > div:nth-child(1) {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(8, 16, 32, 0.3098039216);
+  background-color: rgba(196, 209, 234, 0.3098039216);
   color: white;
   font-size: 16px;
   z-index: 6;
@@ -38,7 +48,7 @@
 #root2 > div:nth-child(2) {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(8, 16, 32, 0.3098039216);
+  background-color: rgba(196, 209, 234, 0.3098039216);
   color: red;
   font-size: 16px;
   z-index: 5;
@@ -46,10 +56,19 @@
   left: 0;
   top: 80vh;
 }
+#root2 > div:nth-child(2) > div {
+  border-radius: 50%;
+  background-color: red;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  top: 3em;
+  left: 50em;
+}
 #root2 > div:nth-child(3) {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(8, 16, 32, 0.3098039216);
+  background-color: rgba(196, 209, 234, 0.3098039216);
   color: orange;
   font-size: 16px;
   z-index: 4;
@@ -57,10 +76,19 @@
   left: 0;
   top: 80vh;
 }
+#root2 > div:nth-child(3) > div {
+  border-radius: 50%;
+  background-color: orange;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 10em;
+  left: 30em;
+}
 #root2 > div:nth-child(4) {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(8, 16, 32, 0.3098039216);
+  background-color: rgba(196, 209, 234, 0.3098039216);
   color: yellow;
   font-size: 16px;
   z-index: 3;
@@ -68,14 +96,32 @@
   left: 0;
   top: 80vh;
 }
+#root2 > div:nth-child(4) > div:nth-child(1) {
+  border-radius: 50%;
+  background-color: yellow;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  top: 8em;
+  left: 50em;
+}
 #root2 > div:nth-child(5) {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(8, 16, 32, 0.3098039216);
+  background-color: rgba(196, 209, 234, 0.3098039216);
   color: green;
   font-size: 16px;
   z-index: 2;
   position: absolute;
   left: 0;
   top: 80vh;
+}
+#root2 > div:nth-child(5) > div {
+  border-radius: 50%;
+  background-color: green;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 10em;
+  left: 43em;
 }/*# sourceMappingURL=webStyle.css.map */

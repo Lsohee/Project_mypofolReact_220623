@@ -1,11 +1,16 @@
+import contantText from "./contantText.js"
+
+
 export default function layerMe(){
   return (
     <div>
+      <div></div>
       this is layer Me
-      <AirBubbles bubbleName="1"></AirBubbles>
-      <AirBubbles bubbleName="2"></AirBubbles>
-      <AirBubbles bubbleName="3"></AirBubbles>
-      <AirBubbles bubbleName="4"></AirBubbles>
+      <AirBubbles bubbleName={contantText.bubble1}></AirBubbles>
+      <AirBubbles bubbleName={contantText.bubble2}></AirBubbles>
+      <AirBubbles bubbleName={contantText.bubble3}></AirBubbles>
+      <AirBubbles bubbleName={contantText.bubble4}></AirBubbles>
+      <AirBubbles bubbleName={contantText.bubble5}></AirBubbles>
     </div>
   )
 }
@@ -14,7 +19,7 @@ export default function layerMe(){
 // memo component 개념 --> 내가 직접 생성자 함수를 만든것?
 function AirBubbles(props){
   return(
-    <div>bubbles {props.bubbleName}</div>
+    <div class="bubbles">{props.bubbleName}</div>
   )
 }
 

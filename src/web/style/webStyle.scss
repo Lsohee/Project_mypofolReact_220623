@@ -17,7 +17,7 @@
   @mixin sizeColor ($color,$z-index){
     width:100vw;
     height:100vh;
-    background-color: #0810204f;
+    background-color: #c4d1ea4f;
     color:$color;
     font-size: 16px;
     z-index: $z-index;
@@ -27,6 +27,23 @@
   }
   
 
+
+  @mixin main-element($bgc,$width,$heigth,$top,$left){
+    border-radius: 50%;
+    background-color: $bgc;
+    width:$width;
+    height:$heigth;
+    position: relative;
+    top:$top;
+    left:$left;
+  }
+  
+  .bubbles{
+    @include main-element(blue,100px ,100px , 4em, 45em)
+  }
+  
+  
+
   #root2{
     width: 100vw;
     height: 100vh;
@@ -34,21 +51,43 @@
     &>div:nth-child(1){
       @include sizeColor(white,6);
       &>div{
-        position: relative;
-        top:100px;
+    position: relative;
+    top:100px;
         left:100px;
       }
     }
+
+    // layerI
     &>div:nth-child(2){
       @include sizeColor(red,5);
+      &>div{
+        @include main-element(red,400px ,400px,3em,50em );
+      }
     }
+    
+    
+    
+    // layerMy
     &>div:nth-child(3){
       @include sizeColor(orange,4);
+      &>div{
+        @include main-element(orange,200px ,200px ,10em,30em);
+      }
+
     }
+    // layerMe
     &>div:nth-child(4){
       @include sizeColor(yellow,3);
+      &>div:nth-child(1){
+        @include main-element(yellow,70px ,70px ,8em,50em);
+      }
+      
     }
+    // layerMe
     &>div:nth-child(5){
       @include sizeColor(green,2);
+      &>div{
+        @include main-element(green,40px ,40px, 10em,43em);
+      }
     }
   } 
