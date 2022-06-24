@@ -26,24 +26,24 @@ const flower = [
 ]
 
 
-export default function flowerValue(){
+export default function FlowerValue(){
   return(
     <section>
       <h1>flower</h1>
       <ul>
-        {flower.map(({name,family,scientificName,flowerLanguage})=>(
+        {flower.map((name)=>(
           <>
           <li>
-            {{name}.name}
+            {name.name}
           </li>
           <li>
-            {{scientificName}.scientificName}
+            {name.family}
           </li>
           <li>
-            {{family}.family}
+            {name.scientificName}
           </li>
           <li>
-            {{flowerLanguage}.flowerLanguage}
+            {name.flowerLanguage}
           </li>
           <br></br>
           </>
@@ -53,3 +53,8 @@ export default function flowerValue(){
     
   )
 }
+
+
+
+
+

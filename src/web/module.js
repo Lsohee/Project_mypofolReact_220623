@@ -4,15 +4,12 @@ import LayerMe from "./layerMe.js"
 import LayerMyself from "./layerMyself.js"
 import contantText from "./contantText.js"
 
-// const btn = document.getElementById("click")
-// console.log(btn)
-// ? 선택한놈 나머지 
 
-function Root1(){
+
+function Root1(props){
   return (
     <div id="root1">
       this is root1
-
       <div>
         Boys, Don’t be ambitious <br></br> Let’s Be Lim-Bit-ious!
       </div>
@@ -33,7 +30,6 @@ function Root2(){
     return(
       <div id="root2">
         {/* this is root2 */}
-        
         {/* // memo this is div:nth-child(1) */}
           <div> 
             <div>
